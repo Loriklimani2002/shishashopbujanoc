@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shishashop Bujanoc - Premium Hookah Flavors</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Shishashop Bujanoc</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">
+                        <span class="lang" data-lang="en">Home</span>
+                        <span class="lang" data-lang="al">Kreu</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">
+                        <span class="lang" data-lang="en">Flavours</span>
+                        <span class="lang" data-lang="al">Shijet</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="jibiar.html" class="dropdown-item">
+                            <span class="lang" data-lang="en">Jibiar</span>
+                            <span class="lang" data-lang="al">Jibiar</span>
+                        </a>
+                        <a href="alwaha.html" class="dropdown-item">
+                            <span class="lang" data-lang="en">Al Waha</span>
+                            <span class="lang" data-lang="al">Al Waha</span>
+                        </a>
+                        <a href="adalya.html" class="dropdown-item">
+                            <span class="lang" data-lang="en">Adalya</span>
+                            <span class="lang" data-lang="al">Adalya</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">
+                        <span class="lang" data-lang="en">About Us</span>
+                        <span class="lang" data-lang="al">Rreth Nesh</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">
+                        <span class="lang" data-lang="en">Contact</span>
+                        <span class="lang" data-lang="al">Kontakt</span>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Language toggle buttons -->
+            <div class="language-toggle">
+                <button onclick="setLanguage('en')">EN</button>
+                <button onclick="setLanguage('al')">AL</button>
+            </div>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="lang" data-lang="en">Premium Hookah Flavors</span>
+                    <span class="lang" data-lang="al">Shijet Premium të Shishës</span>
+                </h1>
+                <p class="hero-subtitle">
+                    <span class="lang" data-lang="en">Discover the finest selection of authentic hookah tobacco from world-renowned brands</span>
+                    <span class="lang" data-lang="al">Zbuloni përzgjedhjen më të mirë të duhanit autentik të shishës nga markat më të njohura në botë</span>
+                </p>
+                <a href="#featured" class="cta-button">
+                    <span class="lang" data-lang="en">Explore Flavors</span>
+                    <span class="lang" data-lang="al">Eksploro Shijet</span>
+                </a>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Welcome to Shishashop Bujanoc</h2>
+                <p>Your ultimate destination for premium hookah experiences</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Premium Quality</h3>
+                    <p>We source only the finest tobacco leaves and natural ingredients for an authentic taste experience.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Global Brands</h3>
+                    <p>Featuring top international brands including Jibiar, Al Waha, Adalya, and many more.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>Fast Delivery</h3>
+                    <p>Quick and secure shipping to bring your favorite flavors right to your doorstep.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Brands -->
+    <section id="featured" class="featured-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Brands</h2>
+                <p>Explore our collection of premium hookah tobacco brands</p>
+            </div>
+            <div class="brands-grid">
+                <div class="brand-card" onclick="location.href='jibiar.html'">
+                    <div class="brand-image">
+                        <img src=images\logojibiar.png alt="Jibiar Brand" loading="lazy"style="width: 350px; height: auto; ">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Jibiar</h3>
+                        <p>Premium Turkish tobacco with exotic flavor blends</p>
+                        <span class="brand-count">25+ Flavors</span>
+                    </div>
+                </div>
+                <div class="brand-card" onclick="location.href='alwaha.html'">
+                    <div class="brand-image">
+                        <img src="images/alwaha.jpg" alt="Al Waha Brand" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Al Waha</h3>
+                        <p>Traditional Middle Eastern flavors with modern twists</p>
+                        <span class="brand-count">30+ Flavors</span>
+                    </div>
+                </div>
+                <div class="brand-card" onclick="location.href='adalya.html'">
+                    <div class="brand-image">
+                        <img src="images/187.jpg" alt="187 Brand" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>187 Tobacco</h3>
+                        <p>German precision meets Turkish tradition</p>
+                        <span class="brand-count">20+ Flavors</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to get notified about new flavors and special offers</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Shishashop Bujanoc</h3>
+                    <p>Your trusted source for premium hookah flavors and accessories.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Brands</h4>
+                    <ul>
+                        <li><a href="jibiar.html">Jibiar</a></li>
+                        <li><a href="alwaha.html">Al Waha</a></li>
+                        <li><a href="adalya.html">Adalya</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-envelope"></i> info@shishaparadise.com</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Shishashop Bujanoc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jibiar Flavors - Shishashop Bujanoc</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation with language support -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Shishashop Bujanoc</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <span class="lang" data-lang="en">Home</span>
+                        <span class="lang" data-lang="al">Kreu</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle active">
+                        <span class="lang" data-lang="en">Flavours</span>
+                        <span class="lang" data-lang="al">Shijet</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="jibiar.html" class="dropdown-item active">
+                            <span class="lang" data-lang="en">Jibiar</span>
+                            <span class="lang" data-lang="al">Jibiar</span>
+                        </a>
+                        <a href="alwaha.html" class="dropdown-item">
+                            <span class="lang" data-lang="en">Al Waha</span>
+                            <span class="lang" data-lang="al">Al Waha</span>
+                        </a>
+                        <a href="adalya.html" class="dropdown-item">
+                            <span class="lang" data-lang="en">Adalya</span>
+                            <span class="lang" data-lang="al">Adalya</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">
+                        <span class="lang" data-lang="en">About Us</span>
+                        <span class="lang" data-lang="al">Rreth Nesh</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">
+                        <span class="lang" data-lang="en">Contact</span>
+                        <span class="lang" data-lang="al">Kontakt</span>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Language toggle buttons -->
+            <div class="language-toggle">
+                <button onclick="setLanguage('en')">EN</button>
+                <button onclick="setLanguage('al')">AL</button>
+            </div>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Rest of your jibiar.html content with language spans added similarly -->
+
+    <script>
+        function setLanguage(lang) {
+            const elements = document.querySelectorAll('.lang');
+            elements.forEach(el => {
+                el.style.display = (el.dataset.lang === lang) ? 'inline' : 'none';
+            });
+            localStorage.setItem('preferredLanguage', lang);
+        }
+
+        // Set language on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+            setLanguage(savedLang);
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

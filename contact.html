@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact – Shishashop Bujanoc</title>
+<link rel="stylesheet" href="styles.css" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+<style>
+  /* Contact page specific styling */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+
+  .contact-section {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
+  }
+
+  .contact-section h1 {
+    font-weight: 700;
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+  }
+
+  .contact-section p {
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    color: #555;
+  }
+
+  .contact-wrapper {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  .contact-info {
+    flex: 1 1 350px;
+    background: white;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  }
+
+  .contact-info h2 {
+    font-weight: 600;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    color: #222;
+  }
+
+  .contact-info ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1rem;
+  }
+
+  .contact-info li {
+    margin-bottom: 18px;
+    line-height: 1.5;
+  }
+
+  .contact-info strong {
+    display: inline-block;
+    width: 90px;
+    color: #b04e28; /* a warm accent color, fits hookah vibe */
+  }
+
+  .map-container {
+    flex: 1 1 450px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  }
+
+  .map-container iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+    border: 0;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .contact-wrapper {
+      flex-direction: column;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="nav-logo"><h2>Shishashop Bujanoc</h2></div>
+    <ul class="nav-menu">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="brands.html" class="nav-link">Brands</a></li>
+      <li><a href="products.html" class="nav-link">Products</a></li>
+      <li><a href="contact.html" class="nav-link active">Contact</a></li>
+    </ul>
+    <div class="language-toggle">
+      <button onclick="setLanguage('en')">EN</button>
+      <button onclick="setLanguage('al')">AL</button>
+    </div>
+  </div>
+</nav>
+
+<section class="contact-section">
+    <br>
+  <h1 class="lang" data-lang="en">Contact Us</h1>
+  <h1 class="lang" data-lang="al">Na Kontaktoni</h1>
+
+  <p class="lang" data-lang="en">We'd love to hear from you! Reach out by phone, email, or visit us in person.</p>
+  <p class="lang" data-lang="al">Do të na pëlqente të dëgjonim nga ju! Na kontaktoni përmes telefonit, email-it, ose vizitoni lokacionin tonë.</p>
+
+  <div class="contact-wrapper">
+
+    <div class="contact-info">
+      <h2 class="lang" data-lang="en">Contact Information</h2>
+      <h2 class="lang" data-lang="al">Informacion Kontakti</h2>
+
+      <ul>
+        <li><strong class="lang" data-lang="en">Phone:</strong> <span>+1 234 567 890</span></li>
+        <li><strong class="lang" data-lang="al">Telefoni:</strong> <span>+1 234 567 890</span></li>
+
+        <li><strong class="lang" data-lang="en">Email:</strong> <span>support@hookahworld.com</span></li>
+        <li><strong class="lang" data-lang="al">Email:</strong> <span>support@hookahworld.com</span></li>
+
+        <li><strong class="lang" data-lang="en">Address:</strong> <span>123 Hookah Street, Flavor City, USA</span></li>
+        <li><strong class="lang" data-lang="al">Adresa:</strong> <span>Rruga 123 e Nargjilesë, Flavor City, SHBA</span></li>
+      </ul>
+    </div>
+
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019715547569!2d-122.41941568468125!3d37.77492977975907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085817c7b9f7a41%3A0x9a2f6f297a7f8d9d!2s123%20Hookah%20St%2C%20San%20Francisco%2C%20CA%2094103%2C%20USA!5e0!3m2!1sen!2sal!4v1696365971843!5m2!1sen!2sal"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="HookahWorld Location"
+      ></iframe>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  function setLanguage(lang) {
+    const elements = document.querySelectorAll('.lang');
+    elements.forEach(el => {
+      el.style.display = (el.dataset.lang === lang) ? 'block' : 'none';
+    });
+    localStorage.setItem('preferredLanguage', lang);
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+    setLanguage(savedLang);
+  });
+</script>
+
+</body>
+</html>
