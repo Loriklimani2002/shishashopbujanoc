@@ -7,6 +7,93 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+  /* Contact page specific styling */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+
+  .contact-section {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
+  }
+
+  .contact-section h1 {
+    font-weight: 700;
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+  }
+
+  .contact-section p {
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    color: #555;
+  }
+
+  .contact-wrapper {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  .contact-info {
+    flex: 1 1 350px;
+    background: white;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  }
+
+  .contact-info h2 {
+    font-weight: 600;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    color: #222;
+  }
+
+  .contact-info ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1rem;
+  }
+
+  .contact-info li {
+    margin-bottom: 18px;
+    line-height: 1.5;
+  }
+
+  .contact-info strong {
+    display: inline-block;
+    width: 90px;
+    color: #b04e28; /* a warm accent color, fits hookah vibe */
+  }
+
+  .map-container {
+    flex: 1 1 450px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  }
+
+  .map-container iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+    border: 0;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .contact-wrapper {
+      flex-direction: column;
+    }
+  }
+</style>
 </head>
 <body>
     <!-- Navigation -->
@@ -167,19 +254,46 @@
         </div>
     </section>
 
-    <!-- Newsletter Section -->
-    <section class="newsletter-section">
-        <div class="container">
-            <div class="newsletter-content">
-                <h2>Stay Updated</h2>
-                <p>Subscribe to get notified about new flavors and special offers</p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Enter your email" required>
-                    <button type="submit">Subscribe</button>
-                </form>
-            </div>
-        </div>
-    </section>
+<section class="contact-section">
+    <br>
+  <h1 class="lang" data-lang="en">Contact Us</h1><br>
+  <h1 class="lang" data-lang="al">Na Kontaktoni</h1><br>
+
+  <p class="lang" data-lang="en">We'd love to hear from you! Reach out by phone, email, or visit us in person.</p>
+  <p class="lang" data-lang="al">Do të na pëlqente të dëgjonim nga ju! Na kontaktoni përmes telefonit, email-it, ose vizitoni lokacionin tonë.</p><br>
+
+  <br><div class="contact-wrapper">
+
+    <div class="contact-info">
+      <h2 class="lang" data-lang="en">Contact Information</h2>
+      <h2 class="lang" data-lang="al">Informacion Kontakti</h2>
+
+      <ul>
+        <li><strong class="lang" data-lang="en">Phone:</strong> <span>+381 62 811 37 22</span></li>
+ 
+
+        <li><strong class="lang" data-lang="en">Email:</strong> <span>limanilorik@gmail.com</span></li>
+ 
+
+      </ul>
+    </div>
+
+    <div class="map-container">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19161.213136227863!2d21.751358703499147!3d42.456827715581554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1354e3639543d2a7%3A0xb52469faf021401c!2sKosovska%2017%2C%20Bujanovac%2C%20Serbia!5e0!3m2!1sen!2smk!4v1748892109499!5m2!1sen!2smk"
+      width="100%"
+      height="450"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title="Our Location on Google Maps"
+    ></iframe>
+    </div>
+
+  </div>
+</section>
+
 
     <!-- Footer -->
     <footer class="footer">
@@ -189,9 +303,9 @@
                     <h3>Shishashop Bujanoc</h3>
                     <p>Your trusted source for premium hookah flavors and accessories.</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/share/1CYcpTQrMt/?mibextid=wwXIfr"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/shishashopbujanoc?igsh=MTA3bnQ1bDRia3l2bA%3D%3D&utm_source=qr "><i class="fab fa-instagram"></i></a>
+
                     </div>
                 </div>
                 <div class="footer-section">
@@ -207,13 +321,13 @@
                     <ul>
                         <li><a href="jibiar.html">Jibiar</a></li>
                         <li><a href="alwaha.html">Al Waha</a></li>
-                        <li><a href="adalya.html">Adalya</a></li>
+                        <li><a href="adalya.html">187 Tobacco</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Contact Info</h4>
-                    <p><i class="fas fa-envelope"></i> info@shishaparadise.com</p>
-                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i>limanilorik@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +381 62 811 37 22</p>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -266,8 +380,8 @@
                             <span class="lang" data-lang="al">Al Waha</span>
                         </a>
                         <a href="adalya.html" class="dropdown-item">
-                            <span class="lang" data-lang="en">Adalya</span>
-                            <span class="lang" data-lang="al">Adalya</span>
+                            <span class="lang" data-lang="en">187 Tobacco</span>
+                            <span class="lang" data-lang="al">187 Tobacco</span>
                         </a>
                     </div>
                 </li>
